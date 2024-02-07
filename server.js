@@ -23,9 +23,6 @@ app.get("/homework/:id", (request, response)=>{
     const findUser = users.find((user)=> user.id ===parsedId);
     if(!findUser) return response.sendStatus(404);
     return response.send(findUser)
-
-
-
 })
 
 app.listen(PORT, ()=> {
