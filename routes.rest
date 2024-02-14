@@ -1,0 +1,25 @@
+GET http://localhost:3000/api/getAll
+
+###
+
+POST http://localhost:3000/api/post
+Content-Type: application/json
+
+{
+  "name": "Dida",
+  "age":40
+  
+}
+###
+GET http://localhost:3000/api/getOne/65cd26436aada7585e540343
+
+###
+DELETE http://localhost:3000/api/delete/65cd26436aada7585e540343
+
+###
+PATCH http://localhost:3000/api/update/65cd26436aada7585e540343
+Content-Type: application/json
+
+{
+"name":"Dante Jnr"
+}
